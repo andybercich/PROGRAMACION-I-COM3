@@ -1,10 +1,13 @@
 # CREANDO VARIABLE LLAMADA numero1
 
 numero1= 24
+
 # CREANDO VARIABLE LLAMADA numero2
 numero2 = 12.4
+
 # CREANDO VARIABLE SUMA
 suma = numero1+numero2
+
 # CREANDO VARIABLES RESTA,MULTIPLICACIÓN Y DIVISIÓN, LUEGO LAS MUESTRO EN CONSOLA
 multiplicacion = numero2 * numero1
 division = numero1 / numero2
@@ -52,3 +55,13 @@ print(nombre_completo)
 edad = 19
 edad += 5
 edad -=10
+
+# CREANDO VARIABLE ALTURA
+altura = (1.80*4)/3
+
+# VARIABLE NOMBRE EN MAYÚSCULAS
+nombre1 = "ANDRÉS"
+print(nombre1.lower())
+
+# PRIMERA LETRA DE NOMBRE EN MAYÚSCULA
+print(nombre1.title())
