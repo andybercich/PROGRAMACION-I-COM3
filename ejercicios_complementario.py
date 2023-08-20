@@ -52,3 +52,9 @@ print(nombre_completo)
 edad = 19
 edad += 5
 edad -=10
+print(edad)
+#Nombre
+nombre1 = "ANDRÉS"
+
+print(nombre1.lower())
+print(nombre1.title())
