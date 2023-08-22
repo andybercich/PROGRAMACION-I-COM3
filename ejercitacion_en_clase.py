@@ -31,7 +31,7 @@ if lista2[0] <= 31 and lista2[1] <= 12:
             alumnos_desapro = int(input("INGRESE CAUNTOS DESAPROBARON: "))
             alumnos_aprobados = int(input("INGRESE CAUNTOS APROBARON: "))
             alumnos = alumnos_aprobados+alumnos_desapro
-            porcentaje_aprobados = float((alumnos_aprobados//alumnos)*100)
+            porcentaje_aprobados = float((alumnos_aprobados/alumnos)*100)
             print(f"EL PORCENTAJE DE LOS ALUMNOS APROBADOS ES: {porcentaje_aprobados}%")
                 
         elif res1 =="NO":
@@ -39,32 +39,22 @@ if lista2[0] <= 31 and lista2[1] <= 12:
             print("AAAAAH BUENO")
                 
     elif lista[0] == "JUEVES":
-        
-        res2 = int(input("INGRESE EL PORCENTAJE DE ALUMNOS QUE HAY: "))
-        
-        if res2 > 50:
-            
-            print("ASISTIÓ LA MAYORIA")
-            
-        elif res2 == 50:
-            
+        res2 = int(input("INGRESE LA CANTIDAD DE ALUMNOS PARA LA PRÁCTICA HABLADA ESTÁN PRESENTES: "))
+        res3 = int(input("INGRESE LA CANTIDAD DE ALUMNOS PARA LA PRÁCTICA HABLADA HAY EN LA LISTA: "))
+        porcentaje_asist = (res2/res3) *100
+        if porcentaje_asist > 50:
+            print("ASISTIÓ MÁS DE LA MAYORÍA")
+        elif porcentaje_asist<50:
+            print("ASISTIÓ MENOS DE LA MITAD DE LOS ALUMNOS")
+        elif porcentaje_asist == 50:
             print("ASISTIÓ EXACTAMENTE LA MITAD")
             
-        elif res2 < 50:
-            
-             print("ASISTIÓ MENOS DE LA MITAD")
-             
     elif lista[0] == "VIERNES" and (lista2[0] == 1 and (lista2[1] == 1 or lista2[1] == 7)):
         
         print("SE INICIA UN NUEVO CICLO")
         alumnos_nuevo_ciclo = int(input("INGRESE LA CANTIDAD DE ALUMNOS: "))
         arancel = int(input("INGRESE EL ARANCEL: "))
-        print("EL INGRESO TOTAL DE DINERO ES: ", (alumnos_nuevo_ciclo*arancel))
-        
-    else: 
-        
-        print("DIA DE LA SEMANA INGRESADO NO VALIDO")
-        
+        print("EL INGRESO TOTAL DE DINERO ES: ", (alumnos_nuevo_ciclo*arancel))       
 else:
     
     print("MES O DÍA INGRESADO NO VALIDO")
