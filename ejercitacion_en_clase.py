@@ -1,7 +1,3 @@
-day = 0
-dd = 0
-mounth = 00
-
 
 lista = input("INGRESE DIA DE LA SEMANA, DIA DE FECHA/MES EN ESTE FORMATO: dia, dd/mm: ")
 
