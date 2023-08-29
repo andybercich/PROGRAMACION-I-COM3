@@ -39,7 +39,7 @@ for i in range(5):
     
 
 for i in range(5):
-    print(f" EL MENSAJE ENCRIPTADO NÚMERO {i} ES {lista_palabras_encrip[i]}")
+    print(f" EL MENSAJE ENCRIPTADO NÚMERO {i+1} ES {lista_palabras_encrip[i]}")
     
 #EJERCICIO 2
 """Crear un programa que solicite el ingreso de números enteros positivos, hasta que el usuario ingrese el
