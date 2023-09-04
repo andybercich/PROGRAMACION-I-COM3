@@ -238,15 +238,11 @@ anio = int(input("Ingrese el año en que nacio: "))
 print(f"La persona nacio en {dia:02d}/{mes:02d}/{anio}")'''
 
 # EJERCICIO 20
-'''20. Hacer otra versión del programa, pero esta vez almacenado todo en una única variable con formato DDMMAAA.
+"""20. Hacer otra versión del programa, pero esta vez almacenado todo en una única variable con formato DDMMAAA.
 
-dia = int(input("Ingrese el dia en que nacio: "))
-mes = int(input("Ingrese el mes en que nacio: "))
-anio = int(input("Ingrese el año en que nacio: "))
-
-unica_variable = f"{dia:02d}/{mes:02d}/{anio}"
-
-print(unica_variable)'''
+day_month_year = (input("INGRESE SU FECHA DE NACIMIENTO EN FORMATO DD/MM/AAAA (SEPARADO MEDIANTE BARRAS): " ))
+list = day_month_year.split("/")
+print(f"USTED NACIÓ EL DIA {list[0]}, DEL MES {list[1]} Y EN EL AÑO {list[2]} ")"""
 
 #EJERCICIO 21
 '''21. Una pareja de motociclistas necesita hacer ciertos cálculos antes de emprender un viaje en moto, 
