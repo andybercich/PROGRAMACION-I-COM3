@@ -61,11 +61,11 @@ while numero > 0:
             pares +=1
         elif digito%2 != 0 and digito != 0:
             impares+=1
-        
         numero //= 10
+    print(f"El número ingresado tiene {pares} números pares y {impares} impares")
     numero = int(input("INGRESA UN NUMERO ENTERO POSITIVO: "))
-
-print(f"numeros pares {pares}, numeros impares{impares}")
+    pares = 0
+    impares = 0
 
     
 
