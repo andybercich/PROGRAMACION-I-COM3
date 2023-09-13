@@ -14,7 +14,6 @@ while(numMenu != 6):
       "5. Buscar n peliculas \n"
       "6. Salir \n")
     numMenu = int(input("Ingrese una opción: "))
-
     if(numMenu == 1):
         add = int(input("Cuantas peliculas desea ingresar: "))
         print("----------------")
