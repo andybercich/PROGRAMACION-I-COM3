@@ -83,17 +83,17 @@ else:
     print("El año no es biciesto")'''
     
 #EJERCICIO 7
-'''7.Escribí un programa para solicitar al usuario tres números y mostrar en pantalla al menor de los tres.
+'''7.Escribí un programa para solicitar al usuario tres números y mostrar en pantalla al menor de los tres. 
 num1 = int(input("Ingresa el primer número entero: "))
 num2 = int(input("Ingresa el segundo número entero: "))
 num3 = int(input("Ingresa el tercero número entero: "))
 
-if num1 > num2 and num1>num3:
-    print(f"El número mas grande es el: {num1}")
-elif num2>num3 and num2>num1:
-    print(f"El número mas grande es el: {num2}")
-elif num3>num2 and num3>num1:
-    print(f"El número mas grande es el: {num3}")'''
+if num1 < num2 and num1<num3:
+    print(f"El menor número es el: {num1}")
+elif num2<num3 and num2<num1:
+    print(f"El menor número es el: {num2}")
+elif num3<num2 and num3<num1:
+    print(f"El menor número es el: {num3}") '''
 
 #8 EJERCICIO 8 
 '''8.Escribí un programa que solicite ingresar un nombre de usuario y una contraseña. 
@@ -218,13 +218,15 @@ else:
 #EJERCICIO 14
 '''Escriba un programa que pida los coeficientes de una ecuación de primer grado (a x + b = 0) y escriba la solución.
 Se recuerda que una ecuación de primer grado puede no tener solución, tener una solución única, o que todos los 
-números sean solución. Se recuerda que la fórmula de las soluciones es: x = -b / a
+números sean solución. Se recuerda que la fórmula de las soluciones es: x = -b / a 
 
 print("Coeficientes de primer grado, formula: a x + b = 0")
 a = int(input("Ingrese el valor de a: "))
 b = int(input("Ingrese el valor de b: "))
+while a == 0:
+    a = int(input("A no puede valer 0, por favor ingrese un número válido: "))
 x = (-b / a)
-print(f"El valor de es: {x}")'''
+print(f"El valor de es: {x}") '''
 
 #EJERCICIO 15
 '''15.Escriba un programa que pregunte primero si se quiere calcular el área de un triángulo o 
@@ -257,7 +259,8 @@ Según la opción que desean, realizar la operación:
 
 a = int(input("Ingrese el primer valor: "))
 b = int(input("Ingrese el segundo valor: "))
-operacion = int(input("Ingrese la operacion que desea realizar: "))
+print(("Ingrese la operacion que desea realizar: "))
+operacion = int(input("""1) SUMAR 2)MULTIPLICAR 3) RESTAR 4)DIVIDIR: """))
 if operacion == 1:
     operacion = a + b
     print(f"El resultado de su operacion es: {operacion}")
@@ -267,11 +270,14 @@ elif operacion == 2:
 elif operacion == 3:
     operacion = a - b
     print(f"El resultado de su operacion es: {operacion}")
-elif operacion == 4:
+elif operacion == 4 and b == 0:
+    while b == 0:
+        b = int(input(("EL VALOR DE B NO PUEDE SER 0, INGRESE OTRO NÚMERO:")))
+        if b != 0: break
     operacion = a / b
     print(f"El resultado de su operacion es: {operacion}")
 else :
-    print("Ingrese un valor correcto")'''
+    print("Ingrese una opción correcta") '''
 
 #EJERCICIO 17
 '''17.Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, 

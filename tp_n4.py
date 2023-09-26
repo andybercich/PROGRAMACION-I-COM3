@@ -84,9 +84,9 @@ while number >0:
         divider +=1
         if divider == number and div <2:
             prime_numbers +=1
-    number = int(input("INGRESE UN NÚMERO ENTERO POSITIVO: "))  """
+    number = int(input("INGRESE UN NÚMERO ENTERO POSITIVO: "))  
 
-print("HAS INGRESADO " , prime_numbers ," NÚMEROS PRIMOS")
+print("HAS INGRESADO " , prime_numbers ," NÚMEROS PRIMOS") """
 #EJERCICIO 5
 """Escribir un programa que permita al usuario ingresar dos años y luego imprima todos los años en ese rango, 
 que sean bisiestos y múltiplos de 10. 

@@ -1,4 +1,5 @@
 import random
+import drawing
 """Crea un juego interactivo del ahorcado en Python. El juego debe seleccionar una palabra al
 azar de una lista de palabras predefinidas y permitir que el jugador adivine la palabra letra por
 letra. El jugador tiene un número limitado de intentos antes de perder el juego.
@@ -17,6 +18,8 @@ def ahorcado(num):
     #MIENTRAS LOS INTENTOS FALLIDOS SEAN MENORES A 5 Y YA NO HAYAN MÁS GUIONES EN LA VARIABLES AUX ( O SEA QUE SE HAYAN DESCUBIERTO TODAS LAS LETRAS) SE REALIZAEÁ EL SIGUIENTE BUCLE
     while attempts!=5 and "_" in aux:
         count = 0
+        print(" ")
+        drawing(attempts)
         print("LETRAS INGRESADAS")
         for let in letters_entry:
             print(let, end=" ")

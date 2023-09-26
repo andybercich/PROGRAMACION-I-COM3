@@ -15,7 +15,7 @@ comenzar desde la letra “a”.
 Ejemplo: la palabra “EXTRA” corrida 3 lugares se convierte en “HAWUD”. Utilizando el alfabeto
 español, de 27 letras, el siguiente cálculo matemático permite volver a comenzar por el principio una
 vez que se llegó a la “z”: (índice de la letra a correr+corrimiento)%27
-Sólo se encriptarán las letras de los mensajes, dejando al resto de caracteres sin modificación"""
+Sólo se encriptarán las letras de los mensajes, dejando al resto de caracteres sin modificación
 
 correr = int(input("INGRESE EL CORRIMIENTO: "))
 abecedario = "abcdefghijklmnñopqrsstuvwxyz"
@@ -39,7 +39,7 @@ for i in range(5):
     
 
 for i in range(5):
-    print(f" EL MENSAJE ENCRIPTADO NÚMERO {i+1} ES {lista_palabras_encrip[i]}")
+    print(f" EL MENSAJE ENCRIPTADO NÚMERO {i+1} ES {lista_palabras_encrip[i]}") """
     
 #EJERCICIO 2
 """Crear un programa que solicite el ingreso de números enteros positivos, hasta que el usuario ingrese el
@@ -61,11 +61,13 @@ while numero > 0:
             pares +=1
         elif digito%2 != 0 and digito != 0:
             impares+=1
-        
         numero //= 10
+    print(f"El número ingresado tiene {pares} números pares y {impares} impares")
     numero = int(input("INGRESA UN NUMERO ENTERO POSITIVO: "))
+    pares = 0
+    impares = 0
 
-print(f"numeros pares {pares}, numeros impares{impares}")
+
 
     
 
